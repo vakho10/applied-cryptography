@@ -1,0 +1,1 @@
+openssl dgst -sha256 -verify ecc_public.pem -signature ecc.sig ecc.txt

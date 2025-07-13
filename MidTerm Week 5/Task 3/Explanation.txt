@@ -1,0 +1,1 @@
+Because of the cryptographic hash function, changing a single letter in the message produces an entirely different HMAC.

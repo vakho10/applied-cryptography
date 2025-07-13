@@ -1,0 +1,1 @@
+openssl pkey -in bob_private.pem -pubout -out bob_public.pem

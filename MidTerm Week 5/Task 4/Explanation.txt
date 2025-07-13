@@ -1,0 +1,9 @@
+In order to create a shared secret between two parties over an unsecure channel, Diffie-Hellman key exchange is typically utilized in 
+secure communications. It plays a crucial role in creating ephemeral session keys that guarantee forward secrecy during the 
+TLS (Transport Layer Security) handshake. 
+Additionally, it is a component of secure messaging protocols like the Signal Protocol, which enables end-to-end encryption in 
+applications like Signal and WhatsApp.
+
+Its significance comes from the fact that it enables two parties to decide on a secret key without ever sending it directly, 
+making it impossible for eavesdroppers to figure out the key even if they manage to intercept all network traffic. 
+In terms of contemporary internet security, this makes it essential for creating private and verified communication.

@@ -1,0 +1,1 @@
+cmp alice_secret.bin bob_secret.bin && echo "Good" || echo "Bad"

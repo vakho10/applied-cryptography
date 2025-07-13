@@ -1,0 +1,1 @@
+openssl enc -aes-128-cbc -salt -in secret.txt -out secret.enc

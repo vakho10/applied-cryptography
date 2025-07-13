@@ -1,0 +1,1 @@
+openssl genpkey -paramfile dhparams.pem -out bob_private.pem

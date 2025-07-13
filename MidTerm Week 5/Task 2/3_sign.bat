@@ -1,0 +1,1 @@
+openssl dgst -sha256 -sign ecc_private.pem -out ecc.sig ecc.txt

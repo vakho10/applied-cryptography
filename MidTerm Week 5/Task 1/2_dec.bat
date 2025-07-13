@@ -1,0 +1,1 @@
+openssl enc -d -aes-128-cbc -in secret.enc -out decrypted.txt

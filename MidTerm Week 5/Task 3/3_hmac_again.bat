@@ -1,0 +1,1 @@
+openssl dgst -sha256 -hmac "secretkey123" data_changed.txt
