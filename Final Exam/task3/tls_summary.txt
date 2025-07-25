@@ -1,0 +1,12 @@
+Brief Describe of How TLS Provides Confidentiality and Integrity
+
+Confidentiality:
+
+1. It Uses symmetric encryption (e.g., AES) after handshake
+2. Prevents eavesdropping on data exchanged
+3. Keys exchanged securely using asymmetric cryptography (e.g., RSA, ECDHE)
+
+Integrity:
+
+1. TLS uses Message Authentication Codes (MACs) or Authenticated Encryption (like GCM mode) to detect tampering
+2. Handshake includes digital certificate validation to prevent man-in-the-middle attacks

@@ -1,0 +1,2 @@
+openssl cms -decrypt -in encrypted_message.pem -out decrypted_signed.pem -recip bob_cert.pem -inkey bob_key.pem -passin pass:bobpass123
+openssl cms -verify -in decrypted_signed.pem -out decrypted_message.txt -CAfile ca_cert.pem > signature_verification.txt 2>&1

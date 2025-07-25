@@ -1,0 +1,28 @@
+Signature Verification Process:
+
+1. Digital Signature Creation:
+   - Alice creates SHA-256 hash of the message
+   - Encrypts the hash with her private key (creates signature)
+   - Includes her certificate in the signed message
+
+2. Verification Steps:
+   a) Bob decrypts message with his private key
+   b) Extracts Alice's certificate
+   c) Validates certificate chain against trusted CA
+   d) Extracts signature and decrypts with Alice's public key
+   e) Computes hash of received message
+   f) Compares computed hash with decrypted hash
+
+3. Validation Outcomes:
+   - Valid Signature: 
+     * Certificate chain verifies to trusted CA
+     * Hashes match → proves authenticity and integrity
+   - Invalid Signature: 
+     * Certificate verification fails, OR
+     * Hashes don't match
+
+4. Security Guarantees:
+   - Authentication: Verified via X.509 certificate chain
+   - Integrity: Signed hash prevents tampering
+   - Non-repudiation: Only Alice's private key could sign
+   - Confidentiality: Only Bob's private key can decrypt

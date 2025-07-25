@@ -1,0 +1,1 @@
+openssl smime -sign -in original_message.txt -signer alice_cert.pem -inkey alice_private.key -outform DER -nodetach | openssl smime -encrypt -out signed_message.asc -outform PEM -des3 bob_cert.pem
